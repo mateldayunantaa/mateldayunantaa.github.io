@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com");
+@import url("https://fonts.gstatic.com");
+@import url("https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&family=Poppins:ital,wght@0,100;0,500;0,600;1,900&display=swap");
+
+body {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(headerbg1-o7rtmt-7j-transformed.png);
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0; /* Tambahkan ini untuk menghilangkan margin default pada body */
+  font-family: "Poppins", sans-serif; /* Menggunakan font Poppins */
+}
+
+.container p {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  max-width: 400px;
+  border: none;
+  outline: none;
+  color: #000;
+  background: rgba(253, 253, 255, 0.76);
+  border-radius: 15px; /* Tambahkan border-radius untuk membuat pinggiran melengkung */
+}
+
+/* Style untuk username */
+.username {
+  font-weight: bold;
+  color: #007bff; /* Ganti warna teks sesuai keinginan */
+}
+
+/* Style untuk name */
+.name {
+  font-style: italic;
+  color: #ff5733; /* Ganti warna teks sesuai keinginan */
+}
+
+/* Style untuk phone */
+.phone {
+  text-decoration: underline;
+  color: #0d9d58; /* Ganti warna teks sesuai keinginan */
+}
+
+/* Style untuk email */
+.email {
+  font-family: "Mountains of Christmas", cursive;
+  font-size: 20px;
+  color: #f705ce; /* Ganti warna teks sesuai keinginan */
+}
+
+/* Penyesuaian untuk tampilan p di layar kecil */
+@media (max-width: 576px) {
+  .container p {
+    padding: 10px; /* Saya mengurangi padding agar sesuai dengan tampilan layar kecil */
+    max-width: 100%; /* Menggunakan max-width agar lebih responsif */
+  }
+}
+
+/* Penyesuaian untuk tampilan p di layar sangat kecil */
+@media (max-width: 414px) {
+  .container p {
+    padding: 10px; /* Saya mengurangi padding agar sesuai dengan tampilan layar sangat kecil */
+  }
+}
